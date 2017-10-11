@@ -1,20 +1,30 @@
-# Jekyll Materialize Starter Template v0.1
+# Flexible-Jekyll is a simple and clean theme for Jekyll
 
-*A Site Starter Materialize Templates.
+![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
 
-The theme is a fork of the [minima][1]
+## Demo
 
-![minima theme preview](/screenshot.png)
+Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
 
+The main page would look like this:
 
-# License
+![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
 
-The theme is available as open source under the terms of the [MIT License][2].
+The post page would look like this:
 
-[Materialize][3] a  modern responsive front-end framework based on Material Design
+![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
 
-Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll</a>
+## Features
 
-[1]: https://github.com/jekyll/minima
-[2]: https://opensource.org/licenses/MIT
-[3]: http://materializecss.com/
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](http://fontawesome.io/)
+- [Disqus](https://disqus.com/)
+- [Analytics](https://analytics.google.com/analytics/web/)
+
+## Installation:
+
+Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
+
+### License
+
+GNU General Public License v3.0
