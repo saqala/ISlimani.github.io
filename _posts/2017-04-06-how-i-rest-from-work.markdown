@@ -12,3 +12,5 @@ tags: [static-website, Jekyll, Github, blog]
 Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites
 
 ## Tutorial
+
+{% youtube https://www.youtube.com/watch?v=orMel3EbfsI&t=26s %}
