@@ -13,4 +13,4 @@ Jekyll is a simple, blog-aware, static site generator for personal, project, or 
 
 ## Tutorial
 
-{% youtube https://www.youtube.com/watch?v=orMel3EbfsI&t=26s %}
+<iframe width="1903" height="715" src="https://www.youtube.com/embed/orMel3EbfsI" frameborder="0" allowfullscreen></iframe>
