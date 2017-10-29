@@ -28,5 +28,7 @@ You don’t want to give the app access to (client) all your files on Google Dri
 It gives a limited access to an HTTP service on behalf of the resource owner to a third-party application without the need of the client to understand all the hassle of the protocol or the implemented security mechanism.
 Have you ever seen  a web page or android app like the one in figure1, then you have used OAuth without even knowing about it!
 
-![Alt](oauth2.PNG "Title")
+![Alt](oauth2.png "Figure 1 A Web App asking for authorization")
+
+
 
