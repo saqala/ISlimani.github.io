@@ -16,5 +16,6 @@ But what is it, how does it work, and why do we need it?
 
 ## What is OAuth 2.0?
 *OAuth 2.0 is a delegation protocol, a means of letting someone who controls a resource allow a software application to access that resource on their behalf without impersonating them. It is used to protect a large (and growing) number of web APIs all over the world, from large-scale providers such as Facebook and Google to small startups.*[^1]
+
 [^1]: OAuth2 in Action By RICHER and SANSO Manning Publications p3
 
