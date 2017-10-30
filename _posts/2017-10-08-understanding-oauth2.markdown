@@ -30,6 +30,8 @@ Have you ever seen  a web page or android app like the one in figure1, then you 
 
 ![Alt](/assets/img/oauth2.png "Figure 1 A Web App asking for authorization")
 
+![Figure 1 A Web App asking for authorization]({{site.baseurl}}/assets/img/oauth2.png)
+
 ## Components in OAuth 2.0
 We have just mentioned all the components of OAuth 2.0 in our example. You see, it’s just that simple.
 These are the components that we have so far:
