@@ -28,20 +28,26 @@ You don’t want to give the app access to (client) all your files on Google Dri
 It gives a limited access to an HTTP service on behalf of the resource owner to a third-party application without the need of the client to understand all the hassle of the protocol or the implemented security mechanism.
 Have you ever seen  a web page or android app like the one in figure1, then you have used OAuth without even knowing about it!
 
-![Alt](/assets/img/oauth2.png "Figure 1 A Web App asking for authorization")
+![Alt](./assets/img/oauth2.png "Figure 1 A Web App asking for authorization")
 
 ## Components in OAuth 2.0
 We have just mentioned all the components of OAuth 2.0 in our example. You see, it’s just that simple.
 These are the components that we have so far:
 
-* *The resource owner has access to an API and can delegate access to that API. The resource owner is usually a person and is generally assumed to have access to a web browser.  (The user with the Google Account in the last example)*
+* *The resource owner has access to an API and can delegate access to that API. The resource owner is usually a person and is generally assumed to have access to a web browser.[^2]  (The user with the Google Account in the last example)*
 
-* *The protected resource is the component that the resource owner has access to. This can take many different forms, but for the most part it’s a web API of some kind.  (mp3 files)*
+* *The protected resource is the component that the resource owner has access to. This can take many different forms, but for the most part it’s a web API of some kind.[^3]  (mp3 files)*
 
-* *The client is the piece of software that accesses the protected resource on behalf of the resource owner.  (web app, e.g soundcloud)*
+* *The client is the piece of software that accesses the protected resource on behalf of the resource owner.[^4]  (web app, e.g soundcloud)*
 
 * *The authorization server (AS) is trusted by the protected resource to issue special purpose
-security credentials—called OAuth access tokens—to clients.  (Google).*
+security credentials—called OAuth access tokens—to clients.[^5]  (Google).*
+
+[^2]: OAuth2 in Action By RICHER and SANSO Manning Publications p5
+[^3]: OAuth2 in Action By RICHER and SANSO Manning Publications p6
+[^4]: OAuth2 in Action By RICHER and SANSO Manning Publications p6
+[^5]: OAuth2 in Action By RICHER and SANSO Manning Publications p11
+
 
 
 
