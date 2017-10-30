@@ -50,7 +50,7 @@ security credentials—called OAuth access tokens—to clients.[^5]  (Google).*
 
 ## So How does OAuth 2 work?
 
-*Simply put, the client first sends the resource owner to the authorization server in order to authorize the client.
+* Simply put, the client first sends the resource owner to the authorization server in order to authorize the client.
 
 * The resource owner authenticates to the authorization server and is generally presented with a choice of whether to authorize the client making the request (figure1).
 
