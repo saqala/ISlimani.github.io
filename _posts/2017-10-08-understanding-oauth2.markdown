@@ -28,7 +28,7 @@ You don’t want to give the app access to (client) all your files on Google Dri
 It gives a limited access to an HTTP service on behalf of the resource owner to a third-party application without the need of the client to understand all the hassle of the protocol or the implemented security mechanism.
 Have you ever seen  a web page or android app like the one in figure1, then you have used OAuth without even knowing about it!
 
-![Alt](./assets/img/oauth2.png "Figure 1 A Web App asking for authorization")
+![Alt](../assets/img/oauth2.png "Figure 1 A Web App asking for authorization")
 
 ## Components in OAuth 2.0
 We have just mentioned all the components of OAuth 2.0 in our example. You see, it’s just that simple.
@@ -47,6 +47,18 @@ security credentials—called OAuth access tokens—to clients.[^5]  (Google).*
 [^3]: OAuth2 in Action By RICHER and SANSO Manning Publications p6
 [^4]: OAuth2 in Action By RICHER and SANSO Manning Publications p6
 [^5]: OAuth2 in Action By RICHER and SANSO Manning Publications p11
+
+## So How does OAuth 2 work?
+
+*Simply put, the client first sends the resource owner to the authorization server in order to authorize the client.
+
+* The resource owner authenticates to the authorization server and is generally presented with a choice of whether to authorize the client making the request (figure1).
+
+* Once the authorization grant has been made, the client can then request an access token from the authorization server.
+
+* This access token can be used at the protected resource to access the API, as granted by the resource owner.
+
+
 
 
 
