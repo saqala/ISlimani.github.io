@@ -27,8 +27,7 @@ Speaking about a modern java-based enterprise application, you will mostly need:
 * Spring Security: Who doesn't need that! a Powerful framework to manage authentication and access-control 
 * Spring Data JPA: an easy way to implement JPA based repositories
 * Spring Social: Connect your application with known social providers, Google, Facebook and Twitter and Others.
- ** Spring MVC (including Restful web services), Spring Security, Spring Core (including Inversion of Control IOC), Spring Data, Spring Boot **
-to some extent, ** Spring Social, Spring Test**
+
 
 
 
