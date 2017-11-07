@@ -70,12 +70,18 @@ As an example, Tomcat, which is an implementation of Servlet and JSP and also pr
 
 ### What's Dependency of Injection
 
-So far, the simple definition that I've found for dependency injection is the following:
+So far, the simplest definition that I've found for dependency injection is the following:
 *Basically, instead of having your objects creating a dependency or asking a factory object to make one for them, you pass the needed dependencies in to the object externally, and you make it somebody else's problem. This "someone" is either an object further up the dependency graph, or a dependency injector (framework) that builds the dependency graph. A dependency as I'm using it here is any other object the current object needs to hold a reference to.*[^1]
 
 [^1]: https://stackoverflow.com/questions/130794/what-is-dependency-injection/140655#140655
 
-In Spring terms, instead of creating your objects with the *new* operator, let *Spring Ioc* handle them for you. All you need to do, is to *@Autowired* your object and define the referenced object with an xml file or with annotations or without any configuration at all in case of Spring Boot. 
+In Spring terms, instead of creating your objects with the *new* operator, let *The IoC Container* handle them for you. All you need to do, is to *@Autowired* your object and define the referenced object with an xml file or with annotations.
+
+### What's the IoC Container
+
+The Spring IoC container is responsible for instantiating, configuring and assembling objects known as *beans*, as well as managing their lifecycle. It is represented by the interface ApplicationContext.
+
+### How to instantiate Spring Ioc Container?
 
 
 
