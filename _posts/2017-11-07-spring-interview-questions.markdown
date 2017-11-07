@@ -55,8 +55,13 @@ as well as different community projects, they are by tens:
 
 [2]: https://projects.spring.io/spring-social/ "spring social"
 ### Spring and JEE:
-So how does this relate to Spring? Because I didn't see you mention any spring keyword in your definition of JEE.
+Now you might wonder, how does JEE relate to Spring? in both definitions, I didn't mention one another!
+
 That's quite true! because Spring isn't an application server nor an implementation of JEE.
+In fact, JEE and Spring are competing for enterprise java. Spring doesn't necessary require JEE to run.
+As an example, Tomcat, which is an implementation of Servlet and JSP and also provide support for different view technologies including and not limited to Thymeleaf, is more than sufficent to run All the whole Spring Ecosystem.
+
+
 
 
 
