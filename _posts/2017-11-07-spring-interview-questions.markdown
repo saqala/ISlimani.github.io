@@ -66,7 +66,7 @@ As an example, Tomcat, which is an implementation of Servlet and JSP and also pr
 * Presentation Framework: Spring MVC, JSF
 * Security: Spring Security, JAAS/JASPIC
 * Testing: Spring Testing, Arquilian
-
+* Spring Beans vs EJB
 
 
 
