@@ -37,11 +37,23 @@ JEE or Java Enterprise Edition is a **collection of specifications, APIs and tec
 The so-called application servers, like WildFly (formely known as JBoss), GlassFish, etc. are implementations of these specifications.
 
 ### What's Spring?
-Spring means different things in different contexts. In the old days, people mean by Spring a framework to handle Dependency Injection. Over time, Spring has been much more improved to become **an Ecosystem that provides everything you need to embrace the java in an enterprise environment**. Nowadays, Spring refer to the whole family of Spring Projects and modules. 
+Spring means different things in different contexts. In the old days, people refer to Spring as a framework to handle Dependency Injection. Over time, Spring has been much more improved to become **an Ecosystem that provides everything you need to embrace the java in an enterprise environment**. Nowadays, Spring refer to the whole family of Spring Projects and modules. 
 *You should know that Spring maintain and develop it's framework around what's called Projects. Inside any Project, you will find different sub-projects maintained either by the community or the Spring developers. Every Project depends on different modules. refer to this [article][1] for a more thorough explanation about they relate to each other.*
 
 [1]: http://springtutorials.com/introduction-to-spring-modules/ "introduction to spring modules"
 
+Let's have a look inside [spring social project][2], the project contains different sub-projects:
+
+* Spring Social Facebook
+* Spring Social Twitter
+* Spring Social Linkden
+
+as well as different community projects, they are by tens:
+
+* Spring Social DropBox
+* Spring Social Google
+
+[2]: https://projects.spring.io/spring-social/ "spring social"
 ### Spring and JEE:
 So how does this relate to Spring? Because I didn't see you mention any spring keyword in your definition of JEE.
 That's quite true! because Spring isn't an application server nor an implementation of JEE.
