@@ -75,7 +75,7 @@ So far, the simplest definition that I've found for dependency injection is the 
 
 [^1]: https://stackoverflow.com/questions/130794/what-is-dependency-injection/140655#140655
 
-In Spring terms, instead of creating your objects with the *new* operator, let *The IoC Container* handle them for you. All you need to do, is to *@Autowired* your object and define the referenced object with an xml file or with annotations.
+In Spring terms, instead of creating your objects with the *new* operator, let *The IoC Container* handle them for you. All you need to do, is to *@Autowired* your object and define the referenced object with an xml file, with annotations or with java configuration.
 
 ### What's the IoC Container
 
@@ -83,7 +83,7 @@ The Spring IoC container is responsible for instantiating, configuring and assem
 
 ### How to instantiate Spring Ioc Container?
 
-
+As a general rule of thumb, use *ApplicationContext* unless otherwise you have a good reason not to do so. Why? because ApplicationContext is built on top of BeanFactory and it offers what BeanFactory provides and other more enterprise-specific functionality.
 
 
 
