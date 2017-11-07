@@ -61,6 +61,12 @@ That's quite true! because Spring isn't an application server nor an implementat
 In fact, JEE and Spring are competing for enterprise java. Spring doesn't necessary require JEE to run.
 As an example, Tomcat, which is an implementation of Servlet and JSP and also provide support for different view technologies including and not limited to Thymeleaf, is more than sufficent to run All the whole Spring Ecosystem.
 
+* Dependency Injection: Spring IOC, CDN
+* AOP: Spring AOP, interceptor
+* Presentation Framework: Spring MVC, JSF
+* Security: Spring Security, JAAS/JASPIC
+* Testing: Spring Testing, Arquilian
+
 
 
 
