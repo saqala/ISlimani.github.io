@@ -32,9 +32,19 @@ Speaking about a modern java-based enterprise application, you will mostly need:
 
 ### What's JEE:
 
-JEE or Java Enterprise Edition is a **collection of specifications, APIs and technologies** maintained by JCP(Java Community Process) **designed to support Enterprise Applications which usually are large-scale, distributed, difficult to maintain and critical**.
+JEE or Java Enterprise Edition is a **collection of specifications, APIs and technologies** maintained by JCP(Java Community Process) **designed to support Enterprise Applications which usually are large-scale, distributed, difficult to maintain and mission-critical**.
 
 The so-called application servers, like WildFly (formely known as JBoss), GlassFish, etc. are implementations of these specifications.
+
+### What's Spring?
+Spring means different things in different contexts. In the old days, people mean by Spring a framework to handle Dependency Injection. Over time, Spring has been much more improved to become **an Ecosystem that provides everything you need to embrace the java in an enterprise environment**. Nowadays, Spring refer to the whole family of Spring Projects and modules. 
+*You should know that Spring maintain and develop it's framework around what's called Projects. Inside any Project, you will find different sub-projects maintained either by the community or the Spring developers. Every Project depends on different modules. refer to this [article][1] for a more thorough explanation about they relate to each other.*
+
+[1]: http://springtutorials.com/introduction-to-spring-modules/ "introduction to spring modules"
+
+### Spring and JEE:
+So how does this relate to Spring? Because I didn't see you mention any spring keyword in your definition of JEE.
+That's quite true! because Spring isn't an application server nor an implementation of JEE.
 
 
 
