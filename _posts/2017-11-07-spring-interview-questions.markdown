@@ -3,8 +3,7 @@ layout: post
 comments: true
 title: Spring Interview Questions
 date: 2017-10-07 13:32:20 +0300
-description: So you are about to pass an interview as Full stack developer, Backend spring developer and yo are wondering what are
-the # Add post description (optional)
+description: So you are about to pass an interview as Full stack developer, Backend spring developer and yo are wondering what are # Add post description (optional)
 img: spring.png # Add image post (optional)
 tags: [spring, interview]
 ---
