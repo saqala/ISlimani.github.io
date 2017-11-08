@@ -108,7 +108,13 @@ They are 6 predefined and supported beans:
 * `postProcessBeforeInitialization()`: This method of `BeanPostProcessor` interface will be called if a bean has implemented it
 * `@PostConstruct`: The method annotated with this annotation will be called in this phase. Note that Spring recommends to use this annotation over implementing `InitializingBean` interface.
 * `afterPropertiesSet()`: This method of `InitializingBean` interface will be called if a bean has implemented it.
-* `init-method`: in case you have used an xml configuration, custom init method attribute defined via this attribute will be called. (no need to define it, if you have used @PostConstruct or java based configuration `@Bean(initMethod = "init")`) 
+* `init-method`: in case you have used an xml configuration, custom init method defined via this attribute will be called. (no need to define it, if you have used @PostConstruct or java based configuration `@Bean(initMethod = "")` ).
+* `postProcessAfterInitialization()`: This method of `BeanPostProcessor` interface will be called if a bean has implemented it.
 
+At this stage, the bean is fully ready to be used.
+
+* `@PreDestroy`: The method annotated with this annotation will be called in this phase. Note that Spring recommends to use this annotation over implementing `DisposableBean` interface.
+* `destroy()`: This method of `DisposableBean` interface will be called if a bean has implemented it
+* `destroy-method`: in case you have used an xml configuration, custom destroy method defined via this attribute will be called. (no need to define it, if you have used @PreDestroy or java based configuration `@Bean(destroyMethod = "")` ).
 
 
