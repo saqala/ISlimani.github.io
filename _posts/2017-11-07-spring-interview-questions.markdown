@@ -155,7 +155,7 @@ Nowadays, most developers use Annotation based configuration. In a sense, we onl
 
 So bear in mind that
 
-* `@Autowired` use byType autowiring by default. when you have multiple beans definitions and you need one and not the other use `@Qualifier("Bean Name")`.
+* `@Autowired` uses byType autowiring by default. when you have multiple beans definitions and you need one and not the other use `@Qualifier("Bean Name")`.
 * Most of the time, we are working with interfaces as best practice, and later on we implement them. So, let's suppose we have the following code:
 
 `public Interface Student {
@@ -179,13 +179,46 @@ In this schenario, by defining the bean property name, `studentImp`, Spring matc
 
 ### What are the differences between `@Controller`, `@Component`, `@Repository`, `@Configuration`, `@Bean` and `@Service`
 
-* `@Repository`: The `@Repository` annotation is a marker for any class that fulfills the role or stereotype of a repository (also known as Data Access Object or DAO)
-* `@Component`: `@Component` is a generic stereotype for any Spring-managed component. As a general rule of thumb, use this component if other annotations are not suited for your needs, since all of them serve a specific use case.
+* `@Repository`: is a marker for any class that fulfills the role or stereotype of a repository (also known as Data Access Object or DAO)
+* `@Component`: is a generic stereotype for any Spring-managed component. As a general rule of thumb, use this component if other annotations are not suited for your needs, since all of them serve a specific use case.
 * `@Service`: hold business logic and call method in repository layer.
-* `@Controller`: The `@Controller` annotation indicates that a particular class serves the role of a controller.
-* `@Configuration`: a class with `@Configuration` indicates that its primary purpose is as a source of bean definitions
-* `@Bean`: The `@Bean` annotation is used to indicate that a method instantiates, configures and initializes a new object to be managed by the Spring IoC container
+* `@Controller`: indicates that a particular class serves the role of a controller.
+* `@Configuration`: indicates that its primary purpose is as a source of bean definitions
+* `@Bean`: is used to indicate that a method instantiates, configures and initializes a new object to be managed by the Spring IoC container
 
-### What's the use of `@Import` annotation?
+### What's the use of `@Import` and `@Required` annotations?
 
-`@Import` simplifies container instantiation, as only one class needs to be dealt with, rather than requiring the developer to remember a potentially large number of `@Configuration` classes during construction
+* `@Import` simplifies container instantiation, as only one class needs to be dealt with, rather than requiring the developer to remember a potentially large number of `@Configuration` classes during construction
+* `@Required` simply indicates that the property must be populated, otherwise the container throws an exception.
+
+### What's AOP?
+
+Aspect-Oriented Programming (AOP) complements Object-Oriented Programming (OOP) by providing another way of thinking about program structure. The key unit of modularity in OOP is the class, whereas in AOP the unit of modularity is the aspect.[^2]
+
+[^2]: https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop
+
+### What's an Aspect, a JoinPoint, a PointCut, Weaving and an Advice respectively?
+
+> An aspect is a common feature that's typically scattered across methods, classes, object hierarchies, or even entire object models. It is behavior that looks and smells like it should have structure, but you can't find a way to express this structure in code with traditional object-oriented techniques.[^3] 
+
+[^3]: https://docs.jboss.org/aop/1.0/aspect-framework/userguide/en/html/what.html
+
+In Spring AOP, it is simply a class annotated with `@Aspect`.
+
+> A joinpoint is any point in your java program. The call of a method. The execution of a constructor the access of a field. All these are joinpoints. You could also think of a joinpoint as a particular Java event. Where an event is a method call, constructor call, field access etc.[^4]
+
+[^4]: https://docs.jboss.org/aop/1.0/aspect-framework/userguide/en/html/terms.html
+
+In Spring AOP, a join point always represents a method execution.
+
+> A Pointcut are AOP's Regular expressions matching a particual join point. `execution(public * *(..))` is an example of a point cut that matches the execution of all public methods.
+
+> Weaving is linking aspects with other application types or objects to create an advised object.[^5]
+
+[^5]: https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-introduction-defn
+
+> An Advice is an action taken by an aspect at a particular join point. Think of it as an `Event Handler`. Different types of advice exist in Spring AOP including `@Before`, `@After`, etc.
+
+Review this [article][3] for a complete explanation about AOP concepts
+
+[3]: https://docs.jboss.org/aop/1.0/aspect-framework/userguide/en/html/what.html "What Is Aspect-Oriented Programming?"
