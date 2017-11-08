@@ -177,5 +177,15 @@ So bear in mind that
 
 In this schenario, by defining the bean property name, `studentImp`, Spring matches that to the `StudentImp` implementation and injects that specific implementation.
 
-### What are the differences between `@Controller`, `@Component`, `@Repository` and `@Service`
+### What are the differences between `@Controller`, `@Component`, `@Repository`, `@Configuration`, `@Bean` and `@Service`
 
+* `@Repository`: The `@Repository` annotation is a marker for any class that fulfills the role or stereotype of a repository (also known as Data Access Object or DAO)
+* `@Component`: `@Component` is a generic stereotype for any Spring-managed component. As a general rule of thumb, use this component if other annotations are not suited for your needs, since all of them serve a specific use case.
+* `@Service`: hold business logic and call method in repository layer.
+* `@Controller`: The `@Controller` annotation indicates that a particular class serves the role of a controller.
+* `@Configuration`: a class with `@Configuration` indicates that its primary purpose is as a source of bean definitions
+* `@Bean`: The `@Bean` annotation is used to indicate that a method instantiates, configures and initializes a new object to be managed by the Spring IoC container
+
+### What's the use of `@Import` annotation?
+
+`@Import` simplifies container instantiation, as only one class needs to be dealt with, rather than requiring the developer to remember a potentially large number of `@Configuration` classes during construction
