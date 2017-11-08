@@ -217,6 +217,8 @@ In Spring AOP, a join point always represents a method execution.
 
 [^5]: https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-introduction-defn
 
+In Spring AOP, the weaving is performed at Run Time. Other frameworks might performed it at compile time.
+
 > An Advice is an action taken by an aspect at a particular join point. Think of it as an `Event Handler`. Different types of advice exist in Spring AOP including `@Before`, `@After`, etc.
 
 Review this [article][3] for a complete explanation about AOP concepts
