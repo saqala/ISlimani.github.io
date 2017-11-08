@@ -138,7 +138,7 @@ This is all done using Java Reflection. But we will not dig there, we will just 
 Basically, they are three ways to configre a Spring Application:
 
 * The old way: Xml-based
-* The new way: Annotation-based: still we need an Xml file.
+* The new way: Annotation-based: still we need an Xml file with the following tag `<context:annotation-config\>`
 * The newest way: Java-based: no longer an Xml file is used.
 
 ### What are Autowiring Modes?
@@ -174,4 +174,6 @@ So bear in mind that
 	private Student studentImp;
 }`
 
-In this schenario, by defining the bean property name, studentImp, Spring matches that to the StudentImp implementation and injects that specific implementation.
+In this schenario, by defining the bean property name, `studentImp`, Spring matches that to the `StudentImp` implementation and injects that specific implementation.
+
+### What are the differences between `@Controller`, `@Component`, `@Repository` and `@Service`,
