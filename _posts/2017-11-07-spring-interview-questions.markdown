@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: What you should to pass a Spring Interview
+title: What you should know about Spring before passing an Interview
 date: 2017-10-07 13:32:20 +0300
 description: So you are about to pass an interview as a Backend Spring developer and you are wondering what are # Add post description (optional)
 img: spring.png # Add image post (optional)
@@ -84,11 +84,19 @@ The Spring IoC container is responsible for instantiating, configuring and assem
 
 ### How to instantiate Spring Ioc Container?
 
-As a general rule of thumb, use *ApplicationContext* unless otherwise you have a good reason not to do so. Why? because ApplicationContext is built on top of BeanFactory and it offers what BeanFactory provides and other more enterprise-specific functionality.
+As a general rule of thumb, use `ApplicationContext` unless otherwise you have a good reason not to do so. Why? because `ApplicationContext` is built on top of `BeanFactory` and it offers what `BeanFactory` provides and other more enterprise-specific functionality.
 
-### What's a bean and what are its scopes?
+### Define a bean:
 
 Every Object created and maintained by Spring IoC is called a bean.
+
+### Define an Inner Bean:
+
+Inner beans are beans that are defined within the scope of another bean. Thus, a `<bean/>` element inside the `<property/>` or `<constructor-arg/>` elements is called inner bean.
+
+*Outside an Xml configuration, I didn't see how to configure inner beans*
+
+### What are Beans' scopes?
 They are 6 predefined and supported beans:
 
 * Singleton: (Default) Scopes a single bean definition to a single object instance per Spring IoC container.
@@ -120,9 +128,50 @@ At this stage, the bean is fully ready to be used.
 ### List the different ways to Inject Dependencies in Spring:
 
 From the Spring documentation, DI exists in two major variants: *Constructor-based* and *Setter-based* but *field injection* is also used when you apply `@Autowired` annotation on a field.
+
 This is all done using Java Reflection. But we will not dig there, we will just follow Spring convention: 
+
 *We focus on the plumbing so you can focus on the business logic*.
 
-### 
+### How configuration metadata is passed to the Spring Container?
 
+Basically, they are three ways to configre a Spring Application:
 
+* The old way: Xml-based
+* The new way: Annotation-based: still we need an Xml file.
+* The newest way: Java-based: no longer an Xml file is used.
+
+### What are Autowiring Modes?
+
+In general they are four different autowiring modes:
+
+* Default: by reference. What I mean is that you need to define inside the Xml file the `ref` attribute.
+* byName: Spring looks for a bean with the same name as the property that needs to be autowired
+* byType: Allows a property to be autowired if exactly one bean of the property type exists in the container.
+* constructor: For example, if a bean definition is set to autowire by constructor in configuration file, and it has a constructor with one of the arguments of Student type, Spring looks for a bean definition named Student, and uses it to set the constructor's argument
+
+Nowadays, most developers use Annotation based configuration. In a sense, we only use `@Autowired` annotation.
+
+So bear in mind that
+
+* `@Autowired` use byType autowiring by default. when you have multiple beans definitions and you need one and not the other use `@Qualifier("Bean Name")`.
+* Most of the time, we are working with interfaces as best practice, and later on we implement them. So, let's suppose we have the following code:
+
+`public Interface Student {
+	String getName();
+}`
+
+`@Component
+	public class StudentImp implements Student{
+		@Override
+		String getName() {
+			return "Ilias";
+		}
+	`
+
+`public class SchoolService {
+	@Autowired
+	private Student studentImp;
+}`
+
+In this schenario, by defining the bean property name, studentImp, Spring matches that to the StudentImp implementation and injects that specific implementation.
