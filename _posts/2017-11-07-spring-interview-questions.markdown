@@ -117,4 +117,12 @@ At this stage, the bean is fully ready to be used.
 * `destroy()`: This method of `DisposableBean` interface will be called if a bean has implemented it
 * `destroy-method`: in case you have used an xml configuration, custom destroy method defined via this attribute will be called. (no need to define it, if you have used @PreDestroy or java based configuration `@Bean(destroyMethod = "")` ).
 
+### List the different ways to Inject Dependencies in Spring:
+
+From the Spring documentation, DI exists in two major variants: *Constructor-based* and *Setter-based* but *field injection* is also used when you apply `@Autowired` annotation on a field.
+This is all done using Java Reflection. But we will not dig there, we will just follow Spring convention: 
+*We focus on the plumbing so you can focus on the business logic*.
+
+### 
+
 
