@@ -9,6 +9,7 @@ img: spring.png # Add image post (optional)
 tags: [spring, interview]
 ---
 
+![Spring]({{site.baseurl}}/assets/img/spring-front.png)
 
 ## Introduction
 So you are about to pass an interview as Backend Spring developer and you are wondering what are
