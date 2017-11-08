@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: What you should know about Spring before passing an Interview
 date: 2017-10-07 13:32:20 +0300
+words: 0
 description: So you are about to pass an interview as a Backend Spring developer and you are wondering what are # Add post description (optional)
 img: spring.png # Add image post (optional)
 tags: [spring, interview]
@@ -176,4 +177,5 @@ So bear in mind that
 
 In this schenario, by defining the bean property name, `studentImp`, Spring matches that to the `StudentImp` implementation and injects that specific implementation.
 
-### What are the differences between `@Controller`, `@Component`, `@Repository` and `@Service`,
+### What are the differences between `@Controller`, `@Component`, `@Repository` and `@Service`
+

@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Understanding OAuth2 
 date: 2017-10-07 13:32:20 +0300
+words: 0
 description: OAuth2 is an open standard for token-based authentication and authorization on the Internet # Add post description (optional)
 img: Google-OAuth.png # Add image post (optional)
 tags: [OAuth, OAuth2, Security]
