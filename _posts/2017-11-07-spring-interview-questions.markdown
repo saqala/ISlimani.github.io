@@ -229,3 +229,9 @@ Review this [article][3] for a complete explanation about AOP concepts
 
 ### What's Spring Web MVC
 
+> The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications.
+
+### What's a DispatcherServlet and how does it work?
+
+The DispatcherServlet is Spring MVC's implementation of the front controller pattern. It is responsible for receiving all the http requests and delegate them to appropriate beans to process them and render the appropriate responses.
+
