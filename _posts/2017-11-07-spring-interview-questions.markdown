@@ -1,17 +1,18 @@
 ---
 layout: post
 comments: true
-title: What you should know about Spring
+title: What you should to pass a Spring Interview
 date: 2017-10-07 13:32:20 +0300
-description: So you are about to pass an interview as Full stack developer, Backend spring developer and yo are wondering what are # Add post description (optional)
+description: So you are about to pass an interview as a Backend Spring developer and you are wondering what are # Add post description (optional)
 img: spring.png # Add image post (optional)
 tags: [spring, interview]
 ---
 
 
 ## Introduction
-So you are about to pass an interview as Full stack spring developer, Backend spring developer and you are wondering what are
-the questions that might be asked about spring during the interview. So, you are in the right place.
+So you are about to pass an interview as Backend Spring developer and you are wondering what are
+the things that I should know about. Then you are in the right place. This will be a good start for you.
+This will be a work in-progress, in which I will try to add as many questions and answers as possible.
 Interested. Let's dive in!
 
 
@@ -59,7 +60,7 @@ Now you might wonder, how does JEE relate to Spring? in both definitions, I didn
 
 That's quite true! because Spring isn't an application server nor an implementation of JEE.
 In fact, JEE and Spring are competing for enterprise java. Spring doesn't necessary require JEE to run.
-As an example, Tomcat, which is an implementation of Servlet and JSP and also provide support for different view technologies including and not limited to Thymeleaf, is more than sufficent to run All the whole Spring Ecosystem.
+As an example, Tomcat, which is an implementation of Servlet and JSP and also provide support for different view technologies including and not limited to Thymeleaf, is more than sufficent to run All Spring Ecosystem.
 
 * Dependency Injection: Spring IOC vs CDN
 * AOP: Spring AOP vs interceptor
@@ -97,6 +98,11 @@ They are 6 predefined and supported beans:
 * Application: Scopes a single bean definition to the lifecycle of a ServletContext.
 * WebSocket: Scopes a single bean definition to the lifecycle of a WebSocket.
 
+### Explain the bean lifecycle:
+
+* Instantiation: The Spring IoC will look for a bean definition inside a configuration xml file or annotation. After it will find it, it will create an instance of the bean.
+* Properties injection: After creation of that instance, dependency will be injected.
+* setBeanName() method: This method of BeanNameAware interface will be called if a bean has implemented it.
 
 
 
