@@ -102,8 +102,13 @@ They are 6 predefined and supported beans:
 
 * Instantiation: The Spring IoC will look for a bean definition inside a configuration xml file or annotation. After it will find it, it will create an instance of the bean.
 * Properties injection: After creation of that instance, dependency will be injected.
-* setBeanName() method: This method of BeanNameAware interface will be called if a bean has implemented it.
-
+* `setBeanName()`: This method of `BeanNameAware` interface will be called if a bean has implemented it. It sets the bean name.
+* `setBeanClassLoader()`: This method of `BeanClassLoaderAware` interface will be called if a bean has implemented it.
+* `setBeanFactory()`: This method of `BeanFactoryAware` interface will be called if a bean has implemented it. It provides the owning factory.
+* `postProcessBeforeInitialization()`: This method of `BeanPostProcessor` interface will be called if a bean has implemented it
+* `@PostConstruct`: The method annotated with this annotation will be called in this phase. Note that Spring recommends to use this annotation over implementing `InitializingBean` interface.
+* `afterPropertiesSet()`: This method of `InitializingBean` interface will be called if a bean has implemented it.
+* `init-method`: in case you have used an xml configuration, custom init method attribute defined via this attribute will be called. (no need to define it, if you have used @PostConstruct or java based configuration `@Bean(initMethod = "init")`) 
 
 
 
