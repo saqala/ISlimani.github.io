@@ -9,6 +9,9 @@ img: spring.png # Add image post (optional)
 tags: [spring, interview]
 ---
 
+
+<meta property="og:image" content="{{site.baseurl}}/assets/img/spring-front.png"/>
+
 ## Introduction
 So you are about to pass an interview as Backend Spring developer and you are wondering what are
 the things that I should know about. Then you are in the right place. This will be a good start for you.
