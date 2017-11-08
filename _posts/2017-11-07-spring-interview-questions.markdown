@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Spring Interview Questions
+title: What you should know about Spring
 date: 2017-10-07 13:32:20 +0300
 description: So you are about to pass an interview as Full stack developer, Backend spring developer and yo are wondering what are # Add post description (optional)
 img: spring.png # Add image post (optional)
@@ -84,6 +84,20 @@ The Spring IoC container is responsible for instantiating, configuring and assem
 ### How to instantiate Spring Ioc Container?
 
 As a general rule of thumb, use *ApplicationContext* unless otherwise you have a good reason not to do so. Why? because ApplicationContext is built on top of BeanFactory and it offers what BeanFactory provides and other more enterprise-specific functionality.
+
+### What's a bean and what are its scopes?
+
+Every Object created and maintained by Spring IoC is called a bean.
+They are 6 predefined and supported beans:
+
+* Singleton: (Default) Scopes a single bean definition to a single object instance per Spring IoC container.
+* ProtoType: Scopes a single bean definition to any number of object instances.
+* Request: Scopes a single bean definition to the lifecycle of a single HTTP request
+* Session: Scopes a single bean definition to the lifecycle of an HTTP Session.
+* Application: Scopes a single bean definition to the lifecycle of a ServletContext.
+* WebSocket: Scopes a single bean definition to the lifecycle of a WebSocket.
+
+
 
 
 
