@@ -20,11 +20,34 @@ This time, we are gonna speak about what a developer should know in Spring Web M
 
 > The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications.
 
+#### Open-Close Principal
+
+Spring MVC adheres to **Open for extension, close for modification** principal. Just bear in mind,
+> this principle states that a class should protect itself from alteration while at the same time providing well-defined extension points [^1]
+
+[^1]: Expert Spring MVC and Web Flow by Seth Ladd, Darren Davison, Steven Devijver, and Colin Yates Apress 2006
+
+Seems to abstract, I know me too I couldn't grasp it at first glance. But, check the web they are countless examples that show you how does it work.
+
+#### Controller
+
+Controller intercepts user input and transform it into a model that is represented to the user by the view;
+
+### Model
+
+The Model is just a **Map** collection of **key-value** objects that are passed to the view. This has nothing to do with the model that you define in your business layer, the so-called **DTO** (Data Transfer Object) and that is accessed by **DAO** (Data Access Object). In other implementations of the MVC paradigm, this might be the case, but for the sake for a Spring Application don't confuse them. Remember we are talking now about the **Web Layer**.
+
+### View
+
+
 ### What are the benefits of Spring MVC
 
-Spring Mvc advocates an MVC pattern. MVC provides the following benefits:
+Spring Mvc advocates an MVC paradigm. It provides, among others, the following benefits:
 
-* Easiness and fastest development. Since some developers can focus on the view side, others on the models, and so on.
+* Fastest development. By making developers of the front end focus more on the view side and the backend on the business logic.
+* Separation of concerns: Makes the code easier to maintain, to re-use and to test.
+* Non-constraint to one single view technology: because of separation, we can display the view in different format (html, pdf, etc.)
+* Clear Separation of roles: Each role can be fulfilled by a specialized object.
 
 ### What's a DispatcherServlet and how does it work?
 
