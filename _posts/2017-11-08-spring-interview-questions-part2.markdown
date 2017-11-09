@@ -39,6 +39,7 @@ The Model is just a **Map** collection of **key-value** objects that are passed 
 
 ### View
 
+This is the top layer in our stack. It is responsible for rendering the model into a suited format to the end-user, be it a Web page, a PDF document, an Excel spreadsheet, etc. using different view technologies, these days Thymeleaf, the old days JSP.
 
 ### What are the benefits of Spring MVC
 
