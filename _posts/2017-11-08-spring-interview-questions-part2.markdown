@@ -54,6 +54,14 @@ Spring Mvc advocates an MVC paradigm. It provides, among others, the following b
 
 The DispatcherServlet is Spring MVC's implementation of the front controller pattern. It is responsible for receiving all the http requests and delegate them to appropriate beans to process them and render the appropriate responses.
 
+### What's Handler Mapping?
+
+Handler Mapping allows you to map incoming web requests to appropriate handlers with the use of the `@RequestMapping` annotation.
+
+### How does the `ViewResolver` work?
+
+What the `ViewResolver` simply does is to resolve String-based view names returned from a handler to an actual `View`. That is, it provides a mapping between view names and actual views.
+
 
 
 
