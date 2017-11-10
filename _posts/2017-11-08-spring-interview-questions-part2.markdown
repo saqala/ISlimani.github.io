@@ -62,6 +62,10 @@ Handler Mapping allows you to map incoming web requests to appropriate handlers 
 
 What the `ViewResolver` simply does is to resolve String-based view names returned from a handler to an actual `View`. That is, it provides a mapping between view names and actual views.
 
+### What's servlet mapping?
+
+
+
 
 
 
