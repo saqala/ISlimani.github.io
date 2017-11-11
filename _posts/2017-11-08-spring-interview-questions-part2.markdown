@@ -135,4 +135,7 @@ public class OwnerController {
 * URI variables are automatically converted to the appropriate type
 * URI variables can be named explicitly
 
+### Explain the role of `@ModelAttribute` ?
+
+`@ModelAttribute` is used to retrieve argument from the Model. If it is not present in the model, it is instantiated and then added to the model. Often, we use it to bind form fields to the model, what's called `Data Binding`.
 
