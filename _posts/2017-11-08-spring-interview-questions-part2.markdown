@@ -75,17 +75,18 @@ Example:
 
 * The Servlet Mapping is the mapping of the servlet defined inside `web.xml` or programmatically *(app)*.
  E.g.
-`<servlet-mapping>
-
+`
+<servlet-mapping>
 <servlet-name>spring</servlet-name>
-
 <url-pattern>/app/*</url-pattern>
-
-</servlet-mapping>`
+</servlet-mapping>
+`
 
 * Finally the controller mapping `@RequestMapping` and its sisters. E.g.
 
-`@Controller
+`
+
+@Controller
 
 public class HomeController {
 
@@ -97,7 +98,9 @@ public class HomeController {
 
 	}
 
-}`
+}
+
+`
 
 
 
