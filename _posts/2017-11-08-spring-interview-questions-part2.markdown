@@ -112,17 +112,20 @@ These are some shotcuts for `@RequestMapping`, mainly:
 * `DeleteMapping` is a shortcut for `@RequestMapping(method = RequestMethod.DELETE)`
 * `PatchMapping` is a shortcut for `@RequestMapping(method = RequestMethod.PATCH)`
 
-### Expalin the role of `@PathVariable` ?
+### Explain the role of `@PathVariable` ?
 
 `@PathVariable` is used to map URI variables like in the following example:
 
-```Java
+```java
 @Controller
+
 @RequestMapping("/students/{studentId}")
+
 public class OwnerController {
 
         @GetMapping("/subject/{subjectId}")
-        public Pet findPet(@PathVariable Long studentId, @PathVariable Long subjectId) {
+
+        public Subject findSubject(@PathVariable Long studentId, @PathVariable Long subjectId) {
                 // ...
         }
 }
