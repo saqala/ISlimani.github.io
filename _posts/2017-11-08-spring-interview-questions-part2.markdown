@@ -84,7 +84,7 @@ Example:
 
 * Finally the controller mapping `@RequestMapping` and its sisters. E.g.
 
-```Java
+```java
 @Controller
 
 public class HomeController {
