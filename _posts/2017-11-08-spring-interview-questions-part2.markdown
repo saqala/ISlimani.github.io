@@ -69,7 +69,7 @@ There are three components to a mapped URI path, the `WebApplicationContext` pat
 
 Example: 
 
-**http://example.com/SpringProject/app/home**
+`http://example.com/SpringProject/app/home`
 
 * the `WebApplicationContext`  is often your application/project name *(SpringProject)*. You can retrieve it Programmatically using `getRealPath()` or inside your JSP page using `${pageContext.request.contextPath}` or when working with Spring Boot you could even change it inside your properties file by writing `server.contextPath=/app`. 
 
@@ -98,7 +98,6 @@ public class HomeController {
 	}
 
 }
-
 ```
 
 
