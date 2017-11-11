@@ -74,12 +74,14 @@ Example:
 * the `WebApplicationContext`  is often your application/project name *(SpringProject)*. You can retrieve it Programmatically using `getRealPath()` or inside your JSP page using `${pageContext.request.contextPath}` or when working with Spring Boot you could even change it inside your properties file by writing `server.contextPath=/app`. 
 
 * The Servlet Mapping is the mapping of the servlet defined inside `web.xml` or programmatically *(app)*. E.g.
+
  `<servlet-mapping>
 <servlet-name>spring</servlet-name>
 <url-pattern>/app/*</url-pattern>
 </servlet-mapping>`
 
 * Finally the controller mapping `@RequestMapping` and its sisters. E.g.
+
 `@Controller
 public class HomeController {
 	@RequestMapping(value="/home", method=GET)
