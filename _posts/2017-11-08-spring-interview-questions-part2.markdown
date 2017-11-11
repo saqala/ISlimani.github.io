@@ -139,3 +139,21 @@ public class OwnerController {
 
 `@ModelAttribute` is used to retrieve argument from the Model. If it is not present in the model, it is instantiated and then added to the model. Often, we use it to bind form fields to the model, what's called `Data Binding`.
 
+### Explain the role of `@RequestBody` ?
+`@RequestBody` annotation maps an `HttpRequest` body into an object. Spring automatically deserialize the JSON into a Java type already defined.
+
+### Explain the role of `@ResponseBody` ?
+`@RequestBody` annotation does quite the opposite. It tells a `Controller` to serialize the returned object into JSON and passed back into the `HttpResponse`.
+
+### Explain the role of `@RequestParam` ?
+
+`@RequestParam` annotation is used to retrieve URL parameter and map it to the method argument. E.g:
+URL `example.com/home?name=Ilias`
+```java
+@RequestMapping(value={"/",/home","/index"})
+@ResponseBody
+public String index(@RequestParam("name") String name){
+	return "Hello "+name;
+}
+```
+
