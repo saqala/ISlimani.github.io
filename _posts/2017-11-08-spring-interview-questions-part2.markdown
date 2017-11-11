@@ -100,6 +100,19 @@ public class HomeController {
 }
 ```
 
+### Explain `@RequestMapping` and its sisters?
+
+> The `@RequestMapping` annotation is used to map requests to controllers methods. It has various attributes to match by URL, HTTP method, request parameters, headers, and media types. It can be used at the class-level to express shared mappings or at the method level to narrow down to a specific endpoint mapping
+
+They are some shotcuts for `@RequestMapping`, mainly:
+
+* `GetMapping` is a shortcut for `@RequestMapping(method = RequestMethod.GET)`
+* `PostMapping` is a shortcut for `@RequestMapping(method = RequestMethod.POST)`
+* `PutMapping` is a shortcut for `@RequestMapping(method = RequestMethod.PUT)`
+* `DeleteMapping` is a shortcut for `@RequestMapping(method = RequestMethod.DELETE)`
+* `PatchMapping` is a shortcut for `@RequestMapping(method = RequestMethod.PATCH)`
+
+
 
 
 
