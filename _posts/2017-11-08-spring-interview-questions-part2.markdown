@@ -100,11 +100,11 @@ public class HomeController {
 }
 ```
 
-### Explain `@RequestMapping` and its sisters?
+### Explain the role of `@RequestMapping` and its sisters?
 
 > The `@RequestMapping` annotation is used to map requests to controllers methods. It has various attributes to match by URL, HTTP method, request parameters, headers, and media types. It can be used at the class-level to express shared mappings or at the method level to narrow down to a specific endpoint mapping
 
-They are some shotcuts for `@RequestMapping`, mainly:
+These are some shotcuts for `@RequestMapping`, mainly:
 
 * `GetMapping` is a shortcut for `@RequestMapping(method = RequestMethod.GET)`
 * `PostMapping` is a shortcut for `@RequestMapping(method = RequestMethod.POST)`
@@ -112,11 +112,24 @@ They are some shotcuts for `@RequestMapping`, mainly:
 * `DeleteMapping` is a shortcut for `@RequestMapping(method = RequestMethod.DELETE)`
 * `PatchMapping` is a shortcut for `@RequestMapping(method = RequestMethod.PATCH)`
 
+### Expalin the role of `@PathVariable` ?
+
+`@PathVariable` is used to map URI variables like in the following example:
+
+```Java
+@Controller
+@RequestMapping("/students/{studentId}")
+public class OwnerController {
+
+        @GetMapping("/subject/{subjectId}")
+        public Pet findPet(@PathVariable Long studentId, @PathVariable Long subjectId) {
+                // ...
+        }
+}
+```
 
 
-
-
-
-
+* URI variables are automatically converted to the appropriate type
+* URI variables can be named explicitly
 
 
