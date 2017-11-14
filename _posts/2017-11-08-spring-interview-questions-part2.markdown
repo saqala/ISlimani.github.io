@@ -5,8 +5,8 @@ title: Spring Web MVC
 date: 2017-10-07 13:32:20 +0300
 words: 0
 description: In the last post, we talked about Spring basics including Spring IOC with Spring AOP. # Add post description (optional)
-img: spring.png # Add image post (optional)
-tags: [spring, interview]
+img: MVC.png # Add image post (optional)
+tags: [spring, interview, mvc]
 ---
 
 
