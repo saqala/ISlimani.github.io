@@ -61,7 +61,7 @@ and Voilà! Jamal receives 500$ from Ilias!
 
 ### Spring Security Architecture
 
-To start-off, we need to understand two cornerstones, explained above, that are the raison-d'être in Spring Security: *Authentification* and *Authorisation*. Who are you? and What are you allowed to do? respectively.
+To start-off, we need to understand two cornerstones, explained above, that are the raison-d'être in Spring Security: *Authentication* and *Authorisation*. Who are you? and What are you allowed to do? respectively.
 
 
 
