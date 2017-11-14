@@ -73,7 +73,7 @@ On va créer un utilisateur `ensa` avec un password `ensa`
 
 ![Figure 4 Se connecter comme étant root]({{site.baseurl}}/assets/img/su.png)
 
-Pour remédier à ce probleme, on blocker l'accée au utilisateur root en ajoutant la ligne suivante
+Pour remédier à ce probleme, on bloque l'accée au utilisateur root en ajoutant la ligne suivante
 
 `PermitRootLogin no`  à  `/etc/ssh/sshd_config`
 
@@ -86,9 +86,6 @@ Pour authoriser ou bloquer seulement quelques utilisateurs, on va modifier une a
 ```
 AllowUsers user1 user2
 AllowGroups group1 group2
-```
-
-```
 DenyUsers user1 user2
 DenyGroups group1 group2
 ```
