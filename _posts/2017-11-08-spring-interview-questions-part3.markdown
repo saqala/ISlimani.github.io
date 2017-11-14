@@ -37,7 +37,7 @@ receiver=Youcef&amount=5
 
 What Jamal could do in this case is to create a form with hidden fields:
 
-```
+```html
 <form action="http://bank.com/transfer" method="POST">
 <input type="hidden" name="receiver" value="Jamal"/>
 <input type="hidden" name="amount" value="500"/>
@@ -49,7 +49,7 @@ Jamal has high skills in Social Enginnering. He will simply use that at his own 
 
 Alternatively, he could use JavaScript:
 
-```
+```javascript
 <body onload="document.forms[0].submit()">
 ```
 
