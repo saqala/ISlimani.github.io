@@ -148,6 +148,7 @@ public class OwnerController {
 ### Explain the role of `@RequestParam` ?
 
 `@RequestParam` annotation is used to retrieve URL parameter and map it to the method argument. E.g:
+
 URL `example.com/home?name=Ilias`
 ```java
 @RequestMapping(value={"/",/home","/index"})
@@ -156,4 +157,15 @@ public String index(@RequestParam("name") String name){
 	return "Hello "+name;
 }
 ```
+
+## Spring Security
+
+### What's Spring Security?
+
+**Spring Security** is a powerful and highly customizable *authentication* and *access-control* framework. It is the de-facto standard for securing Spring-based applications.[^2]
+
+* **Authentication** is the process of establishing a principal is who they claim to be (a "principal" generally means a user, device or some other system which can perform an action in your application)
+* **Authorization** refers to the process of deciding whether a principal is allowed to perform an action within your application
+
+[^2]: https://projects.spring.io/spring-security/
 
