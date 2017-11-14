@@ -110,3 +110,4 @@ Je vais utiliser `scp` pour copier mon dossier de Music au serveur
 Dans ce TP, on a appris plusieurs choses sur la communication ssh dans une architecture client-serveur et le transfert des données entre plusieurs machines.
 Nous remercions M. TOUMANARI pour nous donner cet occasion pour apprendre.
 
+{{ page.pdf_url }}
