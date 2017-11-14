@@ -5,7 +5,7 @@ title: Spring Security
 date: 2017-10-07 13:32:20 +0300
 words: 0
 description: In the last post, we talked about Spring WEB MVC. # Add post description (optional)
-img: spring.png # Add image post (optional)
+img: security.png # Add image post (optional)
 tags: [spring, interview, security]
 ---
 
