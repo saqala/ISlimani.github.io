@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: What you should know about Spring before passing an Interview 2
+title: Spring Web MVC
 date: 2017-10-07 13:32:20 +0300
 words: 0
 description: In the last post, we talked about Spring basics including Spring IOC with Spring AOP. # Add post description (optional)
@@ -158,14 +158,4 @@ public String index(@RequestParam("name") String name){
 }
 ```
 
-## Spring Security
-
-### What's Spring Security?
-
-**Spring Security** is a powerful and highly customizable *authentication* and *access-control* framework. It is the de-facto standard for securing Spring-based applications.[^2]
-
-* **Authentication** is the process of establishing a principal is who they claim to be (a "principal" generally means a user, device or some other system which can perform an action in your application)
-* **Authorization** refers to the process of deciding whether a principal is allowed to perform an action within your application
-
-[^2]: https://projects.spring.io/spring-security/
 
