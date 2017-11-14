@@ -1,13 +1,13 @@
 ---
 layout: post
 comments: true
-title: Rapport TP SSH Linux -- SLIMANI ILIAS & ZIANI YOUSSEF
+title: Connecting and transfering files between machines using SSH (French)
 date: 2017-11-14 13:32:20 +0300
 words: 0
 pdf: true
-description: In the last post, we talked about Spring WEB MVC. # Add post description (optional)
+description:  # Add post description (optional)
 img: ssh.png # Add image post (optional)
-tags: [spring, interview, security]
+tags: [SSH, Linux, security]
 ---
 
 ## Introduction
