@@ -55,5 +55,6 @@ Alternatively, he could use JavaScript:
 
 and Voilà! Jamal receives 500$ from Ilias!
 
+> Solving this problem is quite simple. Spring Security will automatically add a token to enforce *Same Origin Policy*.
 [^1]: https://projects.spring.io/spring-security/
 
