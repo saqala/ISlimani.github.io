@@ -22,8 +22,8 @@ This time, we are gonna talk about Spring Security. I'll divide this article int
 
 [^1]: https://projects.spring.io/spring-security/
 
-* **Authentication** is the process of establishing a principal is who they claim to be (a "principal" generally means a user, device or some other system which can perform an action in your application)
-* **Authorization** refers to the process of deciding whether a principal is allowed to perform an action within your application
+* **Authentication** is the process of establishing a principal is who they claim to be (a "principal" generally means a user, device or some other system which can perform an action in your application) 
+* **Authorization** refers to the process of deciding whether a principal is allowed to perform an action within your application. 
 
 ### What's CSRF?
 
@@ -58,6 +58,12 @@ Alternatively, he could use JavaScript:
 and Voilà! Jamal receives 500$ from Ilias!
 
 > Solving this problem is quite simple. Spring Security will automatically add a token to enforce *Same Origin Policy*.
+
+### Spring Security Architecture
+
+To start-off, we need to understand two cornerstones, explained above, that are the raison-d'être in Spring Security: *Authentification* and *Authorisation*. Who are you? and What are you allowed to do? respectively.
+
+
 
 
 
