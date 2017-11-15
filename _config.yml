@@ -20,7 +20,7 @@ email: ilias.slimani@edu.uiz.ac.ma # add your Email address
 discus-identifier:  # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-109725013-1
 
 # Build Settings
 markdown: kramdown
