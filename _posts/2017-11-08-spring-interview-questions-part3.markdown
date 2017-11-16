@@ -155,3 +155,5 @@ or with Java-Configuration:
 public class SecurityInitializer extends AbstractSecurityWebApplicationInitializer {
 }
 ```
+
+Note: the use of `springSecurityFilterChain` is mandatory, since it declares the servlet filter chain that Spring Security will use when intercepting requests.
