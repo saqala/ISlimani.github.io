@@ -150,3 +150,8 @@ All these filters are automatically populated when you declare `DelegatingFilter
 ```
 
 or with Java-Configuration:
+
+```java
+public class SecurityInitializer extends AbstractSecurityWebApplicationInitializer {
+}
+```
