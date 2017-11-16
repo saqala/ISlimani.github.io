@@ -14,7 +14,7 @@ tags: [spring, interview, security]
 In the last post, we talked about Spring Web MVC.
 This time, we are gonna talk about Spring Security. I'll divide this article into three parts: Generalities, Practical and Architectural. Let's dive in!
 
-## Generalities
+## General Questions
 
 ### What's Spring Security?
 
@@ -56,6 +56,11 @@ Alternatively, he could use JavaScript:
 and Voilà! Jamal receives 500$ from Ilias!
 
 > Solving this problem is quite simple. Spring Security will automatically add a token to enforce *Same Origin Policy*.
+
+### Define Password-salting
+
+> Simply put, *Password-salting* is an encryption method used to increase the security of passwords by
+adding a well-known string (salt) to them.
 
 ## Spring Security Architecture
 
@@ -115,9 +120,33 @@ protected resource.
 
 6- Finally, Access is granted or denied.
 
-## Practical Spring Security Questions:
+### What's `DelegatingFilterProxy` and how does it work?
 
+> `DelegatingFilterProxy` is an implementation of the `javax.servlet.Filter` interface. It delegates the calls to a list of chained security filter beans and acts as an interceptor for secured requests
 
+Spring Security relies heavily on the use of `ServletFilters` to provide layers of functionality around a web application request.
 
+> `ServletFilters` are used to intercept user requests and perform pre-or post-processing.
 
+Remember our discussion on `AOP`. `ServletFilters` function as a proxy for `AOP` interception of web requests, as they allow functionality to occur before and after a web request.
 
+Spring Security uses a series of filters, which are applied in a sequence through the use of a Java EE servlet `filter chain`.
+
+> `Filter chain` is a Java EE Servlet API concept that allows a web application to apply a chain of servlet filters to any given request. 
+
+All these filters are automatically populated when you declare `DelegatingFilterProxy` either in your xml file :
+
+```xml
+<filter>
+	<filter-name>springSecurityFilterChain</filter-name>
+	<filter-class>
+		org.springframework.web.filter.DelegatingFilterProxy
+	</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>springSecurityFilterChain</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+```
+
+or with Java-Configuration:
