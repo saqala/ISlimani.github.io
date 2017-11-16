@@ -22,8 +22,6 @@ This time, we are gonna talk about Spring Security. I'll divide this article int
 
 [^1]: https://projects.spring.io/spring-security/
 
-* **Authentication** is the process of establishing a principal is who they claim to be (a "principal" generally means a user, device or some other system which can perform an action in your application) 
-* **Authorization** refers to the process of deciding whether a principal is allowed to perform an action within your application. 
 
 ### What's CSRF?
 
@@ -59,12 +57,65 @@ and Voilà! Jamal receives 500$ from Ilias!
 
 > Solving this problem is quite simple. Spring Security will automatically add a token to enforce *Same Origin Policy*.
 
-### Spring Security Architecture
+## Spring Security Architecture
 
-To start-off, we need to understand two cornerstones, explained above, that are the raison-d'être in Spring Security: *Authentication* and *Authorisation*. Who are you? and What are you allowed to do? respectively.
+To start-off, we need to understand some basic terms.
 
-### Authentication
+### What is a principal?
 
+> *Principal* is a term that signifies a user, device, or system that could perform an action within the application
+
+### What are Credentials?
+
+> *Credentials* are identification keys that a principal uses to confirm its identity.
+
+You can store them using different methods:
+
+* RDBMS
+* LDAP
+* Properties Files
+
+### What's Authentication?
+
+> *Authentication* is the process of establishing a principal is who they claim to be.
+
+There are many ways to authenticate in *Spring Security*: 
+
+* Basic
+* Form
+* Oauth
+* Cookies
+* Single-Sign-On
+
+### What's Authorization?
+
+> *Authorization* refers to the process of deciding whether a principal is allowed to perform an action within your application. To do so, we define **Roles**.
+
+Most common applications define the following roles:
+
+* `ADMIN` is used for full control over users and can manipulate all data.
+* `USER` is specific to users who can view and manipulate their own data.
+* `GUEST` is used to view and access only limited data.
+
+Now let's move on on how things are done.
+
+1- First things first. A user tries to access the application by making a request. The application
+requires the user to provide the credentials so it can be logged in.
+
+2- The credentials are verified by the `Authenticaltion Manager` and the user
+is granted access to the application. The authorization rights for this user are
+loaded into the `Spring Security context`.
+
+3- The user makes a resource request and the `Security Interceptor` intercepts the request before the user accesses a
+protected resource.
+
+4- The `Security Interceptor` extracts the user authorization data from the `security context` and delegates the decision to the `Access Decision Manager`.
+
+5- The `Access Decision Manager` polls a list of voters to return a decision regarding the rights of the authenticated user to system resources.
+
+6- Finally, Access is granted or denied.
+
+## Practical Spring Security Questions:
 
 
 
