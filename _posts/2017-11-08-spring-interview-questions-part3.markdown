@@ -157,3 +157,20 @@ public class SecurityInitializer extends AbstractSecurityWebApplicationInitializ
 ```
 
 Note: the use of `springSecurityFilterChain` is mandatory, since it declares the servlet filter chain that Spring Security will use when intercepting requests.
+
+### Method Security
+
+Method Security is used to apply security to lower layers of an application. Like in the following example: 
+
+```
+@Secured("ROLE_ADMIN")
+public User findById(Long id) {
+return userRepo.findOne(id);
+}
+```
+
+In a Java based configuration, we need to annotate the config class with `@EnableGlobalMethodSecurity` annotation. Afterwards, methods could be secured by annotating them `@Secured`.
+
+You can use **JSR250** annotations as well. The equivalent of `@Secured` Spring annotation is `@RolesAllowed`.
+
+There are other Spring annotations that you could use dependent on your needs, like `@PreAuthorize`, `@PreFilter`, `@PostAuthorize`  and `@PostFilter`.
